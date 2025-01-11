@@ -1,0 +1,7 @@
+// D:\9-11-2025\C++>g++ p13.cpp -o p13
+
+// D:\9-11-2025\C++>p13
+// Enter car name: ferari
+// Comparing: ferari
+// Match found: ferari
+// Match at location: 1

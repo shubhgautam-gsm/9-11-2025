@@ -7,3 +7,11 @@ int main(){
     return 0;  // Program execution ends here when the function returns 0
 }
 // g++ main.cpp -o main && main.exe
+
+1M VIEWS 10MIN - 9MIN && 10YEARS SHARADA VS  HARRY 10K 10MIN 30SEC VIEWS && 10MINX 
+
+YOUTUBE
+
+
+['B','A','C'] 1
+['A','B','C'] 2
