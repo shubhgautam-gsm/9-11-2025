@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  int number = 2;
+  int number = 5;
   int i;
 
   // Print the multiplication table for the number 2

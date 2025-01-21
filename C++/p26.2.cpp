@@ -12,7 +12,6 @@ int main() {
         continue; // exit the loop once the product is found
     }
      cout << product << "\n";
-    
   }
   return 0;
 }
