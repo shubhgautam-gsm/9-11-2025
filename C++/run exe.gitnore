@@ -5,3 +5,7 @@
 // Comparing: ferari
 // Match found: ferari
 // Match at location: 1
+
+
+
+g++ main.cpp -o main && main.exe
