@@ -1,4 +1,11 @@
  
+        h2{
+            /* margin-top: -10px;
+            margin-left: -10px; */
+            margin: -10px 0 0 -9px;
+            text-align: center;
+        }
+
         .h1{
             background-color: #393d3d;
             font-family: cursive;
@@ -26,4 +33,4 @@
         }
         .s1{font-size: 500%;}
         .s2{text-align: justify;margin-left: 10px;margin-right: 10px;}
-        img{width: 320px;}
+        img{border-radius: 10px;}
