@@ -3,7 +3,9 @@
 using namespace std;
 
 int main() {
+  // cars={}
   string cars[9];
+    //  add after need cars[size] becuase not before
   cars[0] = "Volvo";
   cars[1] = "BMW";
   cars[2] = "Ford";
