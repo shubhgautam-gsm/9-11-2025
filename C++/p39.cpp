@@ -11,7 +11,9 @@ int main() {
   cars[2] = "Ford";
   cars[3] = "Mazda";
   cars[4] = "Tesla";
-  for(int i = 0; i < 5; i++) {
+//  for(int i = 0; i < 5; i++) {
+
+  for(int i = 0; i < sizeof(cars); i++) {
     cout << cars[i] << "\n";
   }
   return 0;

@@ -11,6 +11,7 @@ int main() {
   cars.push_back("Mercedez");
 
   for (string car : cars) {
+    //cout << cars[index] << "\n"; no need index because stores value
     cout << car << "\n";
   }
   return 0;
