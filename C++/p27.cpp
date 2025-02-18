@@ -25,4 +25,4 @@ int main() {
 }
 
 
-Laptop.hp[1]
+// Laptop.hp[1]

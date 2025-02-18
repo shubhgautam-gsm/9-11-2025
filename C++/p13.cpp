@@ -79,7 +79,7 @@ int main() {
 
 
 
-// UP VIDEO
+// UP  
 
 // TIMING=1YEAR
 // 10MIN   9MIN AVG
