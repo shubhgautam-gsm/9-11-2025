@@ -5,7 +5,7 @@ int main()
 
     int i = 0;
     int number;
-    for (i;i < 4;i--)
+    for (i;i<4;i--)
     {
         cout << "enter name";
         cin >> number;
