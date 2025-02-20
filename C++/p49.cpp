@@ -7,7 +7,7 @@ int main()
     int number;
     while (i < 4)
     {
-        cout << "enter number";
+        cout << "enter name";
         cin >> number;
         cout << number;
         // infinite loop take values infinite due to remain i=0 so

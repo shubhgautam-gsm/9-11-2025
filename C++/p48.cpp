@@ -53,8 +53,9 @@ int main() {
   return 0;
 }
 
-// i=0
+// int i=0;
+// int number; 
 // while(i<4)
 //  cout>>"enter number"
-//  cin<<i
-//  cout>>i
+//  cin<< number
+//  cout>>number

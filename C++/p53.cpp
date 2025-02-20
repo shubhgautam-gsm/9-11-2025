@@ -3,7 +3,7 @@
 using namespace std;
 
 int main() {
-    // accept multiple data types i.e int,string 
+    // accept multiple/diff data types i.e int,string 
   struct {
     int myNum;
     float percentage;
