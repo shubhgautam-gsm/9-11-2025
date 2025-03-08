@@ -26,6 +26,11 @@
             text-align: center;
             padding: 20px 0;
         }
+        section{
+            display: flex;
+            display: -webkit-flex; /* For older WebKit-based browsers */
+
+        }
 
         section nav li {
             list-style: none;
@@ -38,19 +43,18 @@
         }
 
         section article {
-            float: left;
+           
             background-color: cadetblue;
-            width: 70%;
             height: 300px;
             padding-left: 10px;
+            flex:3;
            
 
         }
 
         section nav {
-            float: left;
+            flex:1;
             background-color: burlywood;
-            width: 30%;
             height: 300px;
             padding: 10px;
         }

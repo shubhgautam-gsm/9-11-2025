@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      #addproduct div{
+        background-color:rgb(53, 53, 53) ;
+        color: white;
+        border-radius: 5px;
+        float: left;
+        overflow: hidden;
+        margin-left: 5px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+      }
+      #addproduct div h2,#addproduct div h4,#addproduct div p{
+        text-align: center;
+      }
+    </style>
+
+</head>
+<body>
+    <form action="" target="_blank">
+        <label for="category">Category:</label>
+            <input type="text" id="category" name="category">
+        <label for="product">Product Name:</label>
+        <input type="text" id="product" name="product">
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price">
+        <label for="imgurl">Image:</label>
+        <input type="text" id="imgurl" name="imgurl">
+        <button onclick="addProduct()">Add Product</button>
+    </form>
+
+    <div id="addproduct">
+        
+    </div>
+    
+
+</body>
+
+<script>
+function addProduct(){
+
+
+    var category = document.getElementById("category").value;
+    //category='laptop'
+    var product = document.getElementById("product").value;
+    //product='lenovo'
+    var price = document.getElementById("price").value;
+    //price='120000'
+    var imgurl = document.getElementById("imgurl").value;
+    console.log(imgurl)
+
+    document.getElementById('addproduct').innerHTML+=`
+    <div>
+     <img src='imgs/${imgurl}' height='200px' width='200px'>
+     <h2>${product}</h2>
+     <h4>${category}</h4> 
+     <p>${price}</p>
+    </div>
+    `
+
+}
+</script>
+</html>
