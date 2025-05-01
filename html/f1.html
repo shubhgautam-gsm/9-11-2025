@@ -4,27 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            height: 600px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: rgb(23, 16, 30);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: aliceblue;
+            padding:60px  0 0px 10px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px 10px rgba(255, 68, 0, 0.717),0px 0px 20px 20px rgb(0, 255, 60);
+            margin:50px 0 0 100px ;
+        }
+    </style>
 </head>
 <body>
     <form action="">
-        <label for="nm">NAME:</label><br>
-
-        <input type="text" id="nm" name="nam" value="jay"><br><br>
-    
-        <label for="sur">SURNAME:</label><br>
-        <input type="text" name="snm" id="sur"><br><br>
-
-        <label for="email">EMAIL:</label><br>
-        <input type="email" name="email" id="email"> 
-        <button type="submit">click me</button>
-    </form>
+        <label for="em">EMAIL</label>
+        <input type="email" id="em" name="email"><br><br>
+        <label for="pss">PASSWORD</label>
+        <input type="password" id="pss" name="password">        
+        <button onclick="view()">view</button><br>
+        <br><br>
+        <input type="submit" value="submit">
+        <button>reset</button><br>
+        </form>
 </body>
+<script>
+    function view(){
+        document.getElementById('pss').type='text'
+    }
+</script>
 </html>
-
-<!-- file:///D:/9-11-2025/html/f1.html?nam=JAY&snm=PATEL&email=JAYPATEL%40GMAIL.COM -->
-<!-- file:///D:/9-11-2025/html/f1.html?
-nam=JAY
-&
-snm=PATEL
-&
-email=JAYPATEL%40GMAIL.COM -->
