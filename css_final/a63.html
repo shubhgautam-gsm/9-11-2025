@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2.demo1{
+            color: blue;
+            writing-mode: horizontal-tb; 
+
+        }
+        h2.demo2{
+            color: blue;
+            writing-mode: vertical-lr; 
+
+        }
+        h2.demo1 small{
+            writing-mode: vertical-lr; 
+
+        }
+    </style>
+</head>
+<body>
+    <h2 class="demo1">Lorem ipsum dolor sit amet consectetur.</h2>
+    <h2 class="demo1">Lorem ipsum dolor sit amet <small>consectetur.</small></h2>
+    <h2 class="demo2">Lorem ipsum dolor sit amet consectetur.</h2>
+</body>
+</html>
