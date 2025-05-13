@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+
+            margin: 100px;
+            /* dhako */
+            float: left;
+            transition: transform 1s;
+        }
+
+        /*.common:hover{
+                        transform: rotateX(0deg) rotateY(180deg);
+
+        }*/
+        .front {
+            
+            width: 340px;
+            height: 600px;
+            overflow: hidden;
+            position: absolute;
+            transform: rotateX(30deg) rotateY(0deg);
+        
+        }
+
+        .back {
+            width: 340px;
+            height: 600px;
+            transform: rotateX(30deg) rotateY(272deg);
+
+
+
+        }
+
+        .front:hover {
+            transform: rotateX(30deg) rotateY(90deg);
+        }
+
+        .back:hover {
+            transform: rotateX(30deg) rotateY(360deg);
+        }
+
+        .front img{
+            border-radius: 35px;
+            
+            height: 101%;
+        }
+        .back img {
+            border-radius: 35px;
+
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="front">
+        <img src="../imgs/iphone16.jpeg" alt="">
+
+    </div>
+    <div class="back">
+        <img src="../imgs/backside.jpg" alt="">
+    </div>
+
+
+</body>
+
+</html>

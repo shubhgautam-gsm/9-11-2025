@@ -4,53 +4,55 @@
 <head>
     <style>
         div {
-            width: 340px;
-            height: 600px;
+
             margin: 100px;
             /* dhako */
             float: left;
             border-radius: 20px;
             transition: transform 1s;
         }
+
         /*.common:hover{
                         transform: rotateX(0deg) rotateY(180deg);
 
         }*/
         .front {
-            background: url(../imgs/iphone16.jpeg);
+            width: 340px;
+            height: 540px;
+            background: url(../imgs/iphone16.jpeg) ;
             background-size: 100% 100%;
             background-repeat: no-repeat;
-            position: absolute;
             overflow: hidden;
-        } 
+        }
 
         .back {
-            background: url(../imgs/mac.jpg);
+            width: 340px;
+            height: 600px;
+            background: url(../imgs/backside.jpg);
             background-repeat: no-repeat;
             background-size: 100% 100%;
             transform: rotateX(0deg) rotateY(91deg);
 
 
         }
-        
-        .front:hover{
-            transform: rotateX(0deg) rotateY(180deg);
-        } 
-        .back:hover{
-            transform: rotateX(0deg) rotateY(180deg);
+
+        .front:hover {
+            transform: rotateX(30deg) rotateY(180deg);
+        }
+
+        .back:hover {
+            transform: rotateX(30deg) rotateY(180deg);
         }
     </style>
 </head>
 
 <body>
 
-    <div class='common' >
-        <div class="front">
+    <div class="front">
 
-        </div>
-        <div class="back">
+    </div>
+    <div class="back">
 
-        </div>
     </div>
 
 

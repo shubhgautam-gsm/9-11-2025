@@ -1,0 +1,19 @@
+body {
+    background-color: powderblue;
+}
+
+h1 {
+    color: blue;
+    background-color: yellow;
+    font-family: cursive;
+}
+
+p {
+    color: red;
+    background-color: green;
+    font-size: 150%;
+    width: 50%;
+    height: 40px;
+}
+
+
