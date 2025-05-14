@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left to Right with Rotation</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-image: url(../../../2_4_batch-2024/css/imgs//download\ \(1\).jpeg);
+            background-size: cover;
+            border-radius: 50%;
+            position: relative;
+            animation: moveBall 5s linear infinite;
+        }
+
+        @keyframes moveBall {
+            0%   { left: 0; transform: rotate(0deg);}
+            10%  { left: 40px; transform: rotate(36deg);}
+            20%  { left: 80px; transform: rotate(72deg);}
+            30%  { left: 120px; transform: rotate(108deg);}
+            40%  { left: 160px; transform: rotate(144deg);}
+            50%  { left: 200px; transform: rotate(180deg);}
+            60%  { left: 160px; transform: rotate(216deg);}
+            70%  { left: 120px; transform: rotate(252deg);}
+            80%  { left: 80px; transform: rotate(288deg);}
+            90%  { left: 40px; transform: rotate(324deg);}
+            100% { left: 0; transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

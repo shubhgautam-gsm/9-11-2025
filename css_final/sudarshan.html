@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Ball Example</title>
+    <style>
+        .ball {
+            width: 50px;
+            height: 50px;
+            background-image: url(../../../2_4_batch-2024/css/imgs//download\ \(1\).jpeg);
+            background-size: 100% 100%;
+            border-radius: 50%;
+            position: relative;
+            animation: moveBall 3s ease-in-out infinite;
+        }
+
+        @keyframes moveBall{
+            0% { top: 0; left: 0;transform: rotateZ(10deg);}
+            25% { top: 0; left: 200px; transform: rotateZ(50deg);}
+            50% { top: 0; left: 200px; transform: rotateZ(90deg);}
+            75% { top: 0; left: 0; transform: rotateZ(140deg);}
+            100% { top: 0; left: 0; transform: rotateZ(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+</body>
+</html>

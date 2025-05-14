@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 300px;
+            height: 400px;
+            margin: 50px;
+            animation-name: box-change;
+            animation-duration: 2s;
+            background-color: red;
+
+        }
+
+        @keyframes box-change {
+            0% {
+                background-color: red;
+                border-radius: 10%;
+                margin-left: 20px;
+            }
+
+            15% {
+                background-color: rgb(255, 94, 0);
+                border-radius: 20%;
+                margin-left: 40px;
+
+
+            }
+
+            30% {
+                background-color: rgb(255, 255, 0);
+                border-radius: 30%;
+                margin-left: 80px;
+
+
+            }
+
+            55% {
+                background-color: rgb(0, 255, 0);
+                border-radius: 40%;     
+                margin-left: 140px;
+
+
+            }
+
+            100% {
+                background-color: rgb(3, 38, 2);
+                border-radius: 50%;
+                margin-left: 200px;
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+</body>
+
+</html>

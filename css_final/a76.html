@@ -11,14 +11,16 @@ div {
 }
 
 div#myDiv {
-      margin-top: 90px;
-
-  transform:matrix(2,1,0.3,0.6,1,0);
+  margin-top: 90px;
   background-image: url(../imgs/items.jpg);
   opacity: 0.9;
   background-repeat: no-repeat;
+  transition: transform 0.6s;
+}
 
-
+div#myDiv:hover {
+  /*matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())*/
+  transform:matrix(1.2,0.6,0.2,1,60,30);
 }
 </style>
 </head>
@@ -26,9 +28,7 @@ div#myDiv {
 
 <h1>The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())</h1>
 
-<div>
-This a normal div element.
-</div>
+
 
 <div id="myDiv">
 This div element is skewed 20 degrees along the X-axis.
