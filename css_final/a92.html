@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animation Fill Mode: forwards vs both</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 20px;
+      background-color: gray;
+      color: white;
+      display: inline-block;
+      line-height: 100px;
+      text-align: center;
+    }
+
+    /* Animation */
+    @keyframes slide {
+      from {
+        transform: translateX(0);
+        background-color: steelblue;
+      }
+      to {
+        transform: translateX(150px);
+        background-color: tomato;
+      }
+    }
+
+    .forward-example {
+      animation: slide 2s forwards;
+      animation-delay: 2s;
+    }
+
+    .both-example {
+      animation: slide 2s both;
+      animation-delay: 2s;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>`forwards` (Waits 2s before animating)</h2>
+  <div class="box forward-example">Forward</div>
+
+  <h2>`both` (Shows starting style immediately)</h2>
+  <div class="box both-example">Both</div>
+
+</body>
+</html>
