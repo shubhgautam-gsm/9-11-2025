@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tooltip {
+            position: relative;
+            left: 60px;
+            top: 60px;
+            margin-left: 200px;
+            border-bottom: 2px dashed red;
+            display: inline-block;
+            width: 60px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+            /*height: 40px;*/
+        }
+
+        @font-face {
+            font-family: nice_fonts;
+            src: url(../fonts/Sweet\ Caramel.ttf);
+        }
+
+        #tooltip #toolinside {
+            background-image: url(../images/feed-6.jpg);
+            background-color: black;
+            color: aliceblue;
+            border-radius: 10px;
+            padding: 10px 5px 10px 5px;
+            visibility: hidden;
+            position: absolute;
+            left: 66px;
+            width: 130px;
+            font-family: nice_fonts;
+            transition: background-image 0.6s;
+        }
+
+        #tooltip:hover #toolinside {
+            visibility: visible;
+            background-image: url(../images/feed-2.jpg);
+            background-size: 100% 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tooltip">iphone17
+        <b id="toolinside">iphone17 higher durable more battery life 2k display</b>
+    </div>
+
+</body>
+
+</html>

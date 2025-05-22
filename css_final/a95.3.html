@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tooltip {
+            position: relative;
+            left: 60px;
+            top: 60px;
+            margin-left: 200px;
+            border: 2px dashed red;
+            display: inline-block;
+            width: 260px;
+
+            height: 140px;
+        }
+
+        #tooltip b {
+            background-color: black;
+            color: aliceblue;
+            border-radius: 10px;
+            padding: 10px 5px 10px 5px;
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        #tooltip:hover b {
+            visibility: visible;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tooltip"><span>iphone17</span>
+        <b>iphone17 higher  </b>
+    </div>
+    <b>a</b><b>b</b>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
