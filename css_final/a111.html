@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+
+        div.responsive {
+            float: left;
+            padding: 0 6px ;
+            width: 20.99%;
+            height: 400px;  
+
+
+        }
+         div.responsive img {
+            height: 400px;
+            width: 100%;
+        }
+
+        div.gallery {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.gallery:hover {
+            border: 2px solid orangered;
+        }
+        @media only screen and (max-width:720px) {
+             div.responsive {
+                width: 45%;
+                padding-bottom:60px ;
+             }
+        }
+
+        @media only screen and (max-width:620px) {
+               div.responsive {
+                width: 94%;
+                padding-bottom:60px ;
+
+             }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="responsive">
+        <div class="gallery">PROFILE 1
+            <img src="../images/feed-1.jpg" alt="">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">PROFILE 2
+            <img src="../images/feed-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">PROFILE 3
+            <img src="../images/feed-3.jpg" alt="">
+        </div>
+    </div>
+    <div class="responsive">
+        <div class="gallery">PROFILE 4
+            <img src="../images/feed-4.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
