@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myimg{
+            border-radius: 10px;
+            cursor:pointer;
+            transition: 0.9s;
+        }
+        #myimg:hover{
+            opacity: 0.6;
+        }
+        .modal{
+            display: none ;
+            position: fixed;
+            z-index: 1;
+            padding-top: 60px;
+            padding-left: 100px;
+            height: 100%;
+            width: 80%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.765);
+        }
+        
+        .modal span{
+            font-size: 40px;
+            position: absolute;
+            top:0;
+            right:15%;
+            color: yellowgreen;
+        }
+        .modal span:focus{
+            color:green;
+        }
+        
+    </style>
+</head>
+<body>
+    <h3>Lorem ipsum dolor sit amet consectetur.
+    Quasi ex dignissimos maxime labore enim.
+    Iure culpa sequi molestiae eligendi nesciunt?
+    Vitae neque eius alias inventore deleniti.
+    Obcaecati nam asperiores voluptatem dolor vel!
+    Exercitationem assumenda incidunt repellendus voluptates perspiciatis!</h3>
+    <img id="myimg" src="../images/feed-6.jpg" alt="" width="300" height="200">
+    
+    <div class="modal">
+        <span>&times;</span>
+        <img src="" alt="" id="inside">
+        <b>BACKEND DEVELOPER</b>
+    </div>
+    <div class="modal"></div>
+       
+
+</body>
+<script>
+    //let modal=document.getElementById('card')
+    let modal=document.getElementsByClassName('modal')[0]
+    let img=document.getElementById('myimg')
+    let modal_img=document.getElementById('inside')
+
+    img.onclick=function(){
+        modal.style.border='2px solid red'
+        modal.style.display='block';
+        modal_img.src=this.src;
+        modal_img.style.width="100%"
+        modal_img.style.paddingLeft='100px'
+        modal_img.style.transform="translateX(-50%)"
+
+
+        //        modal_img.src=../images/feed-6.jpg;
+
+    }
+    span=document.getElementsByTagName('span')[0]
+     span.onclick=function(){
+        modal.style.display='none';
+     }
+
+</script>
+</html>

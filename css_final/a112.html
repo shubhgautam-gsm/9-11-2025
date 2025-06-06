@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myimg{
+            border-radius: 10px;
+            cursor:pointer;
+            transition: 0.9s;
+        }
+        #myimg:hover{
+            opacity: 0.6;
+        }
+        .modal{
+            display: none ;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h3>Lorem ipsum dolor sit amet consectetur.
+    Quasi ex dignissimos maxime labore enim.
+    Iure culpa sequi molestiae eligendi nesciunt?
+    Vitae neque eius alias inventore deleniti.
+    Obcaecati nam asperiores voluptatem dolor vel!
+    Exercitationem assumenda incidunt repellendus voluptates perspiciatis!</h3>
+    <img id="myimg" src="../images/feed-6.jpg" alt="" width="300" height="200">
+    <button onclick="show()">watch</button>
+    
+    <div id="card" class="modal">
+        <span>&times;</span>
+        <img src="../images/feed-6.jpg" alt="">
+        <b>BACKEND DEVELOPER</b>
+    </div>
+</body>
+<script>
+ 
+    let modal=document.getElementById('card')
+        function show(){
+         modal.style.display='block'   
+        }
+
+</script>
+</html>
