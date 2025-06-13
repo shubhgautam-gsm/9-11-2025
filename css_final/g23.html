@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  height: 400px;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  background-color: dodgerblue;
+  padding: 10px;
+  align-content: space-around;
+}
+
+.grid-container > div {
+  background-color: #f1f1f1;
+  color:#000;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h1>align-content: space-around</h1>
+
+<p>The <em>align-content</em> property vertically aligns the grid inside the container.</p>
+
+<p>With the value "space-around" the space between the grid lines are equal, but the space before the first grid item and after the last grid item is set to half of the space between the grid lines:</p>
+
+<div class="grid-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+</body>
+</html>
+
+
