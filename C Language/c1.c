@@ -1,4 +1,4 @@
-//g++ main.cpp -o main && main.exe
+//gcc main.c -o main && main.exe
 // include (samvesh/add/include)   library'<stdio>(standard input output)'
 // {scope}   bca{web dev ,app dev}
 //comment std =standard
