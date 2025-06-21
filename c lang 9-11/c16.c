@@ -5,7 +5,7 @@
 #include<stdio.h>
 
 void main(){
-    float ans = 10 * 8 / 2 - 7 + 15;
+    float ans = 10 * 8 /(float) 3 - 7 + 15;
 
-    printf("\n answer is %f", ans);
+    printf("\n answer is %.2f", ans);
 }

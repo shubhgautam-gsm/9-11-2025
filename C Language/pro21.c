@@ -1,9 +1,10 @@
 #include<stdio.h>
 
-/// local variable
+//local variable
 
 void main(){
     int x = 10;
+    int x = 20;
     printf("\n value of x is %d", x);
 
     {
@@ -12,7 +13,7 @@ void main(){
     }
 
     {
-        int x = 20;
+        int x = 25;
         printf("\n value of x is %d", x);
     }
 

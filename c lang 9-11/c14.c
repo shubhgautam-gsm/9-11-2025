@@ -5,9 +5,9 @@
 void main(){
     int meter, kilometers;
 
-    printf("\n Enter ymeters \t");
-    scanf("%d", &meter);
+    printf("\n Enter kilometers \t");
+    scanf("%d", &kilometers);
 
-    kilometers = meter / 1000;
+    meter = kilometers * 1000;
     printf("\n %d kilometers in meters is %d", kilometers, meter);
 }
