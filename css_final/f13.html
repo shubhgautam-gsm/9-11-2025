@@ -5,6 +5,7 @@
     <style>
         .flex-container {
             display: flex;
+            flex-wrap: wrap;
             align-items: stretch;
             background-color: #f1f1f1;
         }
@@ -12,39 +13,44 @@
         .flex-container>div {
             background-color: DodgerBlue;
             color: white;
-            padding:10px 60px ;
+            padding: 10px 60px;
             margin: 10px;
             text-align: center;
             line-height: 75px;
             font-size: 30px;
         }
 
-         @media screen and (max-width: 600px) {
-             .flex-container {
-                flex-direction: column;
-             }
-            .item1 {
-                order: 4;
-            }
+        .item1 {
+            flex: 20%;
+        }
 
-            .item2 {
-                order: 3;
-            }
+        .item2 {
+            flex: 20%;
+        }
 
-            .item3 {
-                order: 2;
-            }
+        .item3 {
+            flex: 20%;
+        }
 
-            .item4 {
-                order: 1;
+        .item4 {
+            flex: 20%;
+        }
+
+        @media screen and (max-width: 800px) {
+            .item1,.item2,.item3,.item4{
+                flex: 50%;
             }
         }
-      
+         @media screen and (max-width: 600px) {
+            .item1,.item2,.item3,.item4{
+                flex: 90%;
+            }
+        }
     </style>
 </head>
 
 <body>
-
+    <h1>RESPONSIVE WEBSITE</h1>
     <h1>The order Property</h1>
 
     <p>Use the order property to sort the flex items as you like:</p>

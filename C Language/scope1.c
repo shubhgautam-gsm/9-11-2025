@@ -1,15 +1,16 @@
-/**
-    variable with local scope
-*/
+
 
 #include<stdio.h>
 
-void main(){
+void main() {
     int x = 10; /// local for main()
-    printf("\n value of x is %d", x);
+    float y = 10.2; /// local for main()
+    printf("\n value of x is %d y is %f ", x,y);
     msg();
 }
 
-void msg(){
-    printf("\n value of x is %d", x); /// error
+int msg(){
+        int x = 10; /// local for main()
+     printf("\n value of x is %d", x); /// error
+     return 0;
 }

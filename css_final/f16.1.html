@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Width vs. Flex-Basis: Shrink Test</title>
+<style>
+.flex-container {
+  display: flex;
+  width: 300px; /* Limited container width */
+  border: 2px solid #333;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  justify-content: flex-start; /* Align items to the start */
+}
+
+.flex-item {
+  background-color: DodgerBlue;
+  color: white;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  flex-grow: 0;   /* Don't grow */
+  flex-shrink: 0; /* VERY IMPORTANT: Do NOT shrink */
+}
+
+.item-A {
+  width: 100px; /* Explicit width */
+}
+
+.item-B {
+  width: 100px; /* Explicit width */
+}
+
+.item-C-width {
+  width: 150px; /* This item's explicit width */
+}
+</style>
+</head>
+<body>
+
+<h1>Width vs. Flex-Basis: Seeing the Difference</h1>
+
+<h2>Scenario 1: Using `width` with `flex-shrink: 0`</h2>
+<p>Container width: 300px. Items have `flex-grow: 0` and `flex-shrink: 0`.</p>
+<p>Desired total width: 100px (A) + 100px (B) + 150px (C) + 30px (margins) = 380px</p>
+<p>Since `flex-shrink: 0` prevents shrinking, **item C will overflow** the container.</p>
+
+<div class="flex-container">
+  <div class="flex-item item-A">A</div>
+  <div class="flex-item item-B">B</div>
+  <div class="flex-item item-C-width">C (width: 150px)</div>
+</div>
+
+</body>
+</html>

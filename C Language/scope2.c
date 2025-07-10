@@ -1,6 +1,3 @@
-/**
-    variable with global scope
-*/
 
 #include<stdio.h>
 int x = 10; /// global for entire program

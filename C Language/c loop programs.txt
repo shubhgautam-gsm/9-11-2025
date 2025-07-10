@@ -1,5 +1,6 @@
 1 C Program for Neon Number
 Problem: Write a C program to check whether the number is Neon or not.
+//gcc main.c -o main && main.exe
 
 A number is called a Neon Number if the sum of digits of the square of the number is equal to the original number.
 
