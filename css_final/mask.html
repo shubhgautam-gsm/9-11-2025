@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #631e05;
+}
+
+.mask1 {
+  width: 600px;
+  height: 400px;
+  display: block;
+  -webkit-mask-image: url("../images/w3logo.png");
+  mask-image: url(../images/w3logo.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  object-fit: cover;
+}
+</style>
+</head>
+<body>
+
+<h1>The mask-image Property</h1>
+<h3>An image with a mask layer image:</h3>
+
+<div >
+    <img src="../imgs/m2.jpeg" alt="Cinque Terre" class="mask1">
+
+</div>
+<p>Below is your mask image (for testing):</p>
+<img src="../images/w3logo.png" alt="Mask Image">
+
+</body>
+</html>

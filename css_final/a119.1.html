@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+#grad1::before,
+#grad1::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  transition: opacity 2s ease; /* Smooth transition */
+}
+
+#grad1::before {
+  background: linear-gradient(to right, red, yellow);
+  opacity: 1; /* Show initially */
+  z-index: 1;
+}
+
+#grad1::after {
+  background: linear-gradient(to left, red, yellow);
+  opacity: 0; /* Hidden initially */
+  z-index: 2;
+}
+
+#grad1:hover::before {
+  opacity: 0; /* Fade out first gradient */
+}
+
+#grad1:hover::after {
+  opacity: 1; /* Fade in second gradient */
+}
+</style>
+</head>
+<body>
+
+<h1>Smooth Gradient Direction Change (with Transition)</h1>
+<p>Hover over the box below to change gradient direction smoothly:</p>
+
+<div id="grad1"></div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background: linear-gradient(to right, red, yellow);
+  background-size: 200% 100%;
+  background-position: left center;
+  transition: background-position 2s ease;
+}
+
+#grad1:hover {
+  background-position: right center;
+}
+</style>
+</head>
+<body>
+
+<h1>Simulated Gradient Direction Change (Smooth)</h1>
+<p>Hover over the gradient below:</p>
+
+<div id="grad1"></div>
+
+</body>
+</html>
