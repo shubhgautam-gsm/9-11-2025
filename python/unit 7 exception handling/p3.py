@@ -2,7 +2,7 @@ try:
     a = int(input("Enter a: "))
     b = int(input("Enter b: "))
     c = a / b
-    print("a / b = %f"%c)
+    print("a / b = %.2f"%c)
 except ZeroDivisionError:
     print("Can't divide by zero")
     print(Exception)

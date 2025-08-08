@@ -29,3 +29,6 @@ for length in range(min_length, max_length + 1):
     print(f"No password found for length {length}.")
 
 print("Password not found in the given character set and length range.")
+
+
+
