@@ -1,4 +1,4 @@
-def critical_operation(data):
+def critical_operation(data): 
     if not data:
         raise ValueError("Data cannot be empty!")
     # Perform the critical operation here

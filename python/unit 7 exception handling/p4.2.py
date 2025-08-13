@@ -1,6 +1,6 @@
 try:
-    a =float(input("Enter a: "))
-    b = (input("Enter b: "))
+    a =float(input("Enter a: ")) #4
+    b = float(input("Enter b: ")) #'5'
     c = a / b
     print("a / b = %f" % c)
 

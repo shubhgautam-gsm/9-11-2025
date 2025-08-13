@@ -1,9 +1,9 @@
 try:
-#  a=10/0
-#  a=int(input('Enter a number'))
-#  fileptr = open("file2.txt","r")
- fileptr = open("fle3.txt","r")
+
+ fileptr = open("file2.txt","r")
+
 except Exception as e:
- print('FOR FILE ',e)
+ print('FOR FILE ',e) # BY GIVING WARNING
+
 else:
  print("Successfully Done")
