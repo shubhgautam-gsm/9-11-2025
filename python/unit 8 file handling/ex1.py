@@ -1,7 +1,8 @@
 def process_file(filename):
     try:
-        fileptr = open(filename, "r")  # Open the file in read mode
         try:
+            fileptr = open(filename, "r")  # Open the file in read mode
+   
             # Perform file operations
             if fileptr:
                 print("File is opened successfully")
@@ -17,4 +18,4 @@ def process_file(filename):
     except Exception as e:
         print("An error occurred during processing:", str(e))
 # Example usage:
-process_file("file2.txt")
+process_file("file.txt")

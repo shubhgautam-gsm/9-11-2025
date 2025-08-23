@@ -1,6 +1,7 @@
 with open("file1.txt", 'r') as f:
     content = f.read()
-    print(content)
+    print(content) 
+    # locally perform
 
 # Attempting to perform file operations outside the `with` block
 try:

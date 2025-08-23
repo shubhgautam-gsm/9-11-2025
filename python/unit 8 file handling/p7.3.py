@@ -5,4 +5,14 @@ def log_transaction(transaction_data):
 
 # Example usage
 transaction_data = "Transaction details: [Account: e1120, Amount: $266]"
+
 log_transaction(transaction_data)
+
+
+def read_log_transaction():
+    file=open("transaction_log4.txt", 'r')
+    f=file.read()
+    print(f)
+    
+read_log_transaction()
+

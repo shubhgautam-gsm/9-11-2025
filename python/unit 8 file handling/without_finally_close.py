@@ -15,4 +15,4 @@ def process_file_without_finally(filename):
         print("An error occurred during processing:", str(e))
 
 # Example usage:
-process_file_without_finally("file.txt")
+process_file_without_finally("file2.txt")

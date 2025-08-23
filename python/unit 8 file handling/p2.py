@@ -6,3 +6,4 @@ try:
 finally:
  fileptr.close()
  print(list(fileptr))
+

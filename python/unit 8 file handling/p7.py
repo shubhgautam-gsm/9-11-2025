@@ -4,5 +4,5 @@ def log_transaction(transaction_data):
     file.write(transaction_data)
 
 # Example usage
-transaction_data = "Transaction details: [Account: e1120, Amount: $266]"
+transaction_data = "Transaction details: [Account: e250, Amount: $266]"
 log_transaction(transaction_data)
