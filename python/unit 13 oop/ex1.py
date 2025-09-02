@@ -1,8 +1,9 @@
+# model (blueprint)
 class MyClass:
     def my_method(self, a, b, c, d, e):
-        self.c = a + b
-        self.d = a * b
-        self.e = a / b
+        self.c = a + b # c:30
+        self.d = a * b # d:200
+        self.e = a / b # e:0.5
 
 # Creating an instance of MyClass
 obj = MyClass()

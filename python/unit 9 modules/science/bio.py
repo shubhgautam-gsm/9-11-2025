@@ -8,3 +8,6 @@ def dengue():
 
 def swinflue():
     return "Swine Flu (H1N1): An influenza virus that causes respiratory infection in humans."
+
+def fullsci():
+    return f"{corona()}\n{dengue()} \n {swinflue()}"

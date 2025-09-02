@@ -1,6 +1,6 @@
 class Person:
     def set_name(self, name):
-        self.name = name
+        self.name = name # name:"John"
 
     def set_age(self, age):
         self.age = age

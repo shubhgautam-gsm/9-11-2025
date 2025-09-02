@@ -1,7 +1,6 @@
 class Dog:
     def speak(self):
         print("Dog says: Woof!")
-
 class Cat:
     def speak(self):
         print("Cat says: Meow!")

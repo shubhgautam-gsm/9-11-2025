@@ -10,6 +10,6 @@ def nitrogen():
     return "Nitrogen (N₂): A colorless, odorless inert gas that forms about 78% of the earth’s atmosphere."
 
 
-def  fullchem():
+def  fullsci():
     # return oxygen()+'\n'+nitrogen()+'\n'+water()
     return f"{oxygen()}\n{nitrogen()}\n{water()}"

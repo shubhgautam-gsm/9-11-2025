@@ -3,4 +3,11 @@ import science
 
 # print(science.corona())
 # print(science.water())
-print(science.fullchem())
+# print(science.fullsci())
+
+print(science.bio.fullsci())
+
+
+
+# option 1 all name of function need diff
+#option 2

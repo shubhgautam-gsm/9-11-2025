@@ -1,13 +1,14 @@
 import math 
 # ready made functions in math package like sqrt(),fbs()...
 # Constants
-print("Pi:", math.pi)
+print("Pi:%.2f "% math.pi)
 print("Euler's number:", math.e)
 
 # Basic math functions
-print("Square root of 16:", math.sqrt(16))
+print("Square root of 400:", math.sqrt(400))
 print("Absolute value of -5:", math.fabs(-5))
 print("Factorial of 5:", math.factorial(5))
+
 
 # Trigonometric functions (radians)
 print("Sine of 30 degrees:", math.sin(math.radians(30)))
@@ -24,3 +25,10 @@ print("Logarithm base 10 of 100:", math.log10(100))
 print("Ceiling of 4.3:", math.ceil(4.3))
 print("Floor of 4.9:", math.floor(4.9))
 print("Rounded value of 3.7:", round(3.7))
+
+
+# bubble sort
+# 5,1,2,7,8,9,0,6
+# 1,2,5,7,8,0,6,9 <-1
+# 1,2,5,7,0,6,8,9 <-2
+# 1,2,5,0,6,7,8,9 <-3
