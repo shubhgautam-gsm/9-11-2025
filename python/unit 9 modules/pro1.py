@@ -1,6 +1,7 @@
-from .maths import add
+import math
 
 # Call the function from maths module
-add(1,3)
-# sub(5,4)
-# pow(3,5)
+
+math.add(1,3)
+# math.sub(5,4)
+# math.pow(3,5)
