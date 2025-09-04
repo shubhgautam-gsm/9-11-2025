@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html>
 <style>
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
     .nav {
         background-color: rgba(28, 24, 30, 0.816);
         border: 2px solid black;
-        height: 40px;
-        border-radius: 0 0 20px;
+        height: 50px;
+        border-radius: 0 0 20px 20px;
         position: sticky;
         top: 0;
-        margin-left: -5px;
-    }
-    .triplet{
-        float: right;
-    }
-
-    .tabs {
-        display: inline-block;
-        background-color: rgb(249, 255, 127);
-        height: 60%;
-
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* logo left, menu right */
+        padding: 0 20px;
     }
 
     .logo {
-        background-color: burlywood;
-    }
-
-    .home {
-        margin-left: 590px;
-    }
-
-    .about {
-        margin-left: 15px;
-    }
-
-    .contact {
-        margin-left: 15px;
+        background-image: url(../images/tcs.jpg);
+        background-size: 120% 130%;
+        background-position: -5px  60px;
+        
+        padding: 8px 12px;
+        border-radius: 50%;
+        font-weight: bold;
+        height: 30px;
+        width: 30px;
 
     }
 
-    .about,
-    .home,
-    .contact {
-        padding: 9px 9px;
+    .triplet {
+        display: flex;
+        gap: 15px; /* space between tabs */
+    }
+
+    .tabs {
+        background-color: rgb(249, 255, 127);
+        padding: 8px 16px;
         border-radius: 20px 0 20px 0;
-        justify-items: center;
+        transition: all 0.3s;
+    }
+
+    .tabs:hover {
+        background-color: rgb(169, 255, 147);
+        border-radius: 30px 0 30px 0;
     }
 
     body {
         background-color: rgb(78, 61, 95);
+        margin: 0;
+    }
+
+    .common {
+        text-align: center;
+        color: rgb(253, 159, 44);
+        border: 1px solid grey;
+        font-family: 'Courier New', Courier, monospace;
+        padding: 10px;
+        background: rgba(255,255,255,0.05);
     }
 </style>
 
@@ -57,30 +70,36 @@
 
     <!-- HEAD(NAVBAR) -->
     <div class="nav">
-        <div class="logo tabs">
-                TCS
-            </div>
+        <div class="logo"></div>
 
 
         <div class="triplet">
-            
-            <div class="home tabs">
-                HOME
-            </div>
 
-            <div class="about tabs">
-                ABOUT
-            </div>
+            <a href="#home">
+                <div class="home tabs">
+                    HOME
+                </div>
+            </a>
 
-            <div class="contact tabs">
-                CONTACT
-            </div>
+            <a href="#about">
+                <div class="about tabs">
+                    ABOUT
+                </div>
+            </a>
+
+            <a href="#contact">
+                <div class="contact tabs">
+                    CONTACT
+                </div>
+            </a>
+
         </div>
+
     </div>
 
     <!-- ARTICLE -->
     <div>
-        <h1>Welcome to TCS</h1>
+        <h1 class="common" id="home">WELCOME TO TCS</h1>
         <p>Your one-stop solution for all your IT needs.</p>
         <p>Contact us for more information.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque possimus quisquam omnis sed enim fugiat
@@ -114,22 +133,90 @@
             Provident facilis sunt ratione minus accusantium aperiam itaque hic blanditiis est. Tempora debitis expedita
             qui placeat.
             Consequatur molestias rem fugit culpa nam, suscipit voluptates quaerat id aliquid, nisi veniam quibusdam,
-            atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi provident rem autem aspernatur error!
-            Dolorum voluptate nostrum enim, esse hic obcaecati totam quas fuga perferendis, exercitationem ipsam praesentium repellendus!
-            Nemo quisquam vero saepe voluptatum nesciunt incidunt, quasi cupiditate, voluptatibus ut et, ducimus molestias recusandae!
-            Quis, quas quod mollitia, alias nulla cum temporibus accusantium culpa iusto deleniti asperiores nostrum impedit!
-            Magni expedita quam provident! Adipisci, nobis. Nulla maxime dolores ex, temporibus impedit unde alias sequi?
-            A quasi possimus temporibus alias! Et perspiciatis pariatur ratione necessitatibus labore nobis corrupti itaque quis.
-            Amet tempora asperiores eum, explicabo quis veritatis labore et facilis eaque adipisci aspernatur possimus consequuntur?
-            Sit in, nam neque cupiditate corrupti rem maiores nobis. Ducimus nesciunt obcaecati animi consequuntur aspernatur?
+            atque ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sequi provident rem autem
+            aspernatur error!
+            Dolorum voluptate nostrum enim, esse hic obcaecati totam quas fuga perferendis, exercitationem ipsam
+            praesentium repellendus!
+            Nemo quisquam vero saepe voluptatum nesciunt incidunt, quasi cupiditate, voluptatibus ut et, ducimus
+            molestias recusandae!
+            Quis, quas quod mollitia, alias nulla cum temporibus accusantium culpa iusto deleniti asperiores nostrum
+            impedit!
+            Magni expedita quam provident! Adipisci, nobis. Nulla maxime dolores ex, temporibus impedit unde alias
+            sequi?
+            A quasi possimus temporibus alias! Et perspiciatis pariatur ratione necessitatibus labore nobis corrupti
+            itaque quis.
+            Amet tempora asperiores eum, explicabo quis veritatis labore et facilis eaque adipisci aspernatur possimus
+            consequuntur?
+            Sit in, nam neque cupiditate corrupti rem maiores nobis. Ducimus nesciunt obcaecati animi consequuntur
+            aspernatur?
             Optio harum cum nisi assumenda quasi rerum amet, voluptatem culpa aliquid libero omnis, voluptate nemo!
             Labore facere, asperiores magnam rerum omnis dolor, vero eius itaque officiis quia corrupti unde voluptatum?
-            Accusantium delectus ipsum vero? Aliquid, non dolor. Ad numquam molestiae voluptas aspernatur similique sint dignissimos.
+            Accusantium delectus ipsum vero? Aliquid, non dolor. Ad numquam molestiae voluptas aspernatur similique sint
+            dignissimos.
             Sunt nemo pariatur animi nostrum? Earum voluptates at possimus aperiam pariatur odio delectus unde vel?
-            Libero consectetur dignissimos explicabo veritatis voluptate quos, labore, deleniti officiis quasi delectus eveniet, mollitia dolores?
-            Aspernatur ratione aut, a, quidem labore rerum dolor esse temporibus, vel molestias incidunt minus quibusdam!
+            Libero consectetur dignissimos explicabo veritatis voluptate quos, labore, deleniti officiis quasi delectus
+            eveniet, mollitia dolores?
+            Aspernatur ratione aut, a, quidem labore rerum dolor esse temporibus, vel molestias incidunt minus
+            quibusdam!
             A error vel debitis iusto sint aperiam tempore non deleniti sunt, hic, culpa quisquam vitae.</p>
+        <h1 class="common" id="about">ABOUT</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora tenetur illo veritatis, labore libero
+            repellendus.
+            Cupiditate soluta, possimus enim laborum magni veniam dolor sunt suscipit officia fugit, porro explicabo ea.
+            Autem, eos placeat enim blanditiis nihil corrupti ea reprehenderit nesciunt quasi illo iusto nostrum
+            molestias!
+            Voluptatibus, porro quos officia consectetur excepturi cum eos, non vel ipsum qui maxime eum possimus.
+            Unde incidunt voluptates quis harum quia quas, praesentium, at sint excepturi ut libero, provident beatae!
+            Eveniet odit asperiores consequuntur nobis cum quisquam dolores reiciendis soluta illo? Nulla explicabo
+            recusandae veniam?
+            Architecto debitis reprehenderit, ullam delectus, sapiente eius reiciendis quos quasi nostrum nam obcaecati
+            accusantium amet.
+            Vero praesentium odit sapiente fugiat magnam asperiores blanditiis dicta assumenda vitae, aliquid tempore
+            rem optio!
+            Aspernatur debitis facilis consequuntur corrupti cum incidunt earum tenetur, eveniet nisi. Nam possimus
+            nobis magnam!
+            Illo, esse adipisci! Sed saepe vitae ad necessitatibus et corrupti voluptatum dolorum officia reiciendis
+            illum.
+            Inventore hic quis exercitationem delectus, libero soluta dolorum consequatur, sunt eos repudiandae
+            veritatis fugit ipsa!
+            Ut ab reiciendis atque fuga consequatur eum, magni iusto quae expedita architecto iste fugiat tempora?
+            Minima assumenda voluptatibus vitae excepturi nemo odio laudantium labore consequuntur, illo necessitatibus
+            corrupti ipsum quos?
+            Dolorem natus, ipsum soluta rerum, molestias voluptatem nam doloribus labore facilis accusamus odit! Saepe,
+            nulla.
+            Dignissimos, dicta eaque nobis laborum omnis ducimus quia illo aspernatur hic eos repudiandae quas aliquam.
+        </p>
+        <h1 class="common" id="contact">CONTACT</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora tenetur illo veritatis, labore libero
+            repellendus.
+            Cupiditate soluta, possimus enim laborum magni veniam dolor sunt suscipit officia fugit, porro explicabo ea.
+            Autem, eos placeat enim blanditiis nihil corrupti ea reprehenderit nesciunt quasi illo iusto nostrum
+            molestias!
+            Voluptatibus, porro quos officia consectetur excepturi cum eos, non vel ipsum qui maxime eum possimus.
+            Unde incidunt voluptates quis harum quia quas, praesentium, at sint excepturi ut libero, provident beatae!
+            Eveniet odit asperiores consequuntur nobis cum quisquam dolores reiciendis soluta illo? Nulla explicabo
+            recusandae veniam?
+            Architecto debitis reprehenderit, ullam delectus, sapiente eius reiciendis quos quasi nostrum nam obcaecati
+            accusantium amet.
+            Vero praesentium odit sapiente fugiat magnam asperiores blanditiis dicta assumenda vitae, aliquid tempore
+            rem optio!
+            Aspernatur debitis facilis consequuntur corrupti cum incidunt earum tenetur, eveniet nisi. Nam possimus
+            nobis magnam!
+            Illo, esse adipisci! Sed saepe vitae ad necessitatibus et corrupti voluptatum dolorum officia reiciendis
+            illum.
+            Inventore hic quis exercitationem delectus, libero soluta dolorum consequatur, sunt eos repudiandae
+            veritatis fugit ipsa!
+            Ut ab reiciendis atque fuga consequatur eum, magni iusto quae expedita architecto iste fugiat tempora?
+            Minima assumenda voluptatibus vitae excepturi nemo odio laudantium labore consequuntur, illo necessitatibus
+            corrupti ipsum quos?
+            Dolorem natus, ipsum soluta rerum, molestias voluptatem nam doloribus labore facilis accusamus odit! Saepe,
+            nulla.
+            Dignissimos, dicta eaque nobis laborum omnis ducimus quia illo aspernatur hic eos repudiandae quas aliquam.
+        </p>
+
     </div>
+
+
 </body>
 
 </html>
@@ -140,3 +227,6 @@
 <!-- 
 <div>INFOSYS</div>
 <div>HOME</div> -->
+
+
+<!-- select product where price<5000 from products;  -->
